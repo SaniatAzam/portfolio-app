@@ -1,32 +1,45 @@
-import { useState } from 'react';
-import profilePhoto from './photos/pp2.jpeg';
+import { useState } from "react";
+import profilePhoto from "./photos/DP2.png";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 function Hero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
-    <div className="relative flex items-center justify-center min-h-screen bg-black overflow-hidden">
+    <div className="relative flex items-center justify-center min-h-screen dark:bg-[#0F0F0F] overflow-hidden pb-10 pt-10 pl-5 pr-5">
       <div className="lg:flex lg:items-center lg:justify-center lg:max-w-7xl">
         <div className="lg:w-1/2 flex items-center justify-center">
-          <img src={profilePhoto} className="w-1/2 h-auto rounded-xl" alt="Profile" />
+          <img
+            src={profilePhoto}
+            className="w-1/2 h-auto rounded-xl hover:scale-125 transition-all duration-150 ease-out"
+            alt="Profile"
+          />
         </div>
-        <div className="mt-10 lg:mt-0 lg:w-1/2 lg:pl-12 flex items-center justify-center"> 
-          <div className="text-center"> 
+        <div className="mt-10 lg:mt-0 lg:w-1/2 lg:pl-12 flex items-center justify-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Sa Adat Azam Saniat
             </h1>
-            <p className="mt-6 text-lg leading-8 text-white">
-              Hey, there! I'm Saniat. I'
+            <p className="mt-6 text-lg font-mono leading-8 text-white">
+              <span className="font-semibold">Hello! I am Saniat.</span> I'm a
+              passionate Computer Science graduate from McGill University in
+              Montreal, eager to bring innovative solutions to challenging tech
+              landscapes.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="md:block">
               <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                onClick={() =>
+                  window.scrollTo({
+                    top:
+                      document.getElementById("skills").getBoundingClientRect()
+                        .top +
+                      window.scrollY +
+                      -110,
+                    behavior: "smooth",
+                  })
+                }
+                className="flex flex-col items-center justify-center px-4 pb-2 pt-10 text-[#FFB91C] hover:scale-125 cursor-pointer transition-all duration-150 ease-out"
               >
-                Get started
-              </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
+                <FaAngleDoubleDown className="w-6 h-6 mb-1 animate-bounce" />
+                Scroll Down
               </a>
             </div>
           </div>
@@ -37,5 +50,3 @@ function Hero() {
 }
 
 export default Hero;
-
-
