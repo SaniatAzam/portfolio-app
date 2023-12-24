@@ -44,7 +44,7 @@ const Modal = ({
             <div key={index} className="my-4">
               <div class="border-b border-gray-300 my-4"></div>
               <div className="flex space-x-2 items-center">
-                <h1 className="text-3xl font-bold">• {item.key}</h1>
+                <h1 className="text-xl md:text-3xl font-bold">• {item.key}</h1>
                 {item.link && (
                   <span className="">
                     <a

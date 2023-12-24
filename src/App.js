@@ -5,6 +5,7 @@ import Education from "./Education";
 import Credit from "./Credit";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import WorkExperience from "./WorkExperience";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </style>
       <Nav />
       <Hero />
+      <WorkExperience />
       <Skills />
       <Education />
       <Contact />

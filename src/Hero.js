@@ -1,5 +1,6 @@
 import { useState } from "react";
 import profilePhoto from "./photos/DP2.png";
+import mcgill from "./photos/mcgill-logo-red-reverse.db74b099.svg";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
 function Hero() {
@@ -18,21 +19,29 @@ function Hero() {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Sa Adat Azam Saniat
             </h1>
-            <p className="mt-6 text-lg font-mono leading-8 text-white">
-              <span className="font-semibold">Hello! I am Saniat.</span> I'm a
-              passionate Computer Science graduate from McGill University in
-              Montreal, eager to bring innovative solutions to challenging tech
-              landscapes.
+            <p className="inline-block mt-6 text-lg font-mono leading-8 text-white">
+              <span className="font-semibold inline-block">
+                Hello! I am Saniat.
+              </span>{" "}
+              I'm a passionate Computer Science graduate from
+              <span>
+                <img
+                  src={mcgill}
+                  className="w-[30%] md:w-[20%] inline-block px-3"
+                />
+              </span>
+              University in Montreal, eager to bring innovative solutions to
+              challenging tech landscapes. Currently located in Toronto, ON!
             </p>
             <div className="md:block">
               <a
                 onClick={() =>
                   window.scrollTo({
                     top:
-                      document.getElementById("skills").getBoundingClientRect()
+                      document.getElementById("workoo").getBoundingClientRect()
                         .top +
                       window.scrollY +
-                      -110,
+                      -60,
                     behavior: "smooth",
                   })
                 }

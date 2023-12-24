@@ -1,8 +1,10 @@
 import Modal from "./Modal";
-import mcgill from "./photos/mcgill-logo-red-reverse.db74b099.svg";
+import market from "./photos/market.png";
+import rocket from "./photos/rocket.png";
 import elf from "./photos/Elfenland.png";
 import wl from "./photos/workload.png";
 import ics from "./photos/ics.jpeg";
+import malabis from "./photos/malabis.jpg";
 import nis_ag from "./photos/nis_ag.jpg";
 import orgin from "./photos/orgin.png";
 import ta from "./photos/TA.png";
@@ -26,15 +28,15 @@ function Education() {
             title="Software Projects"
             subtitle="An Overview "
             description="2018-Present"
-            d1="I finished my degree in Bachelor of Science, majoring in Computer Science at McGill University."
+            d1="A glance at some of my software/web development projects."
             work={[
               {
                 key: "this.portfolioWebsite",
-                link: "http://localhost:3000",
+                link: "https://github.com/SaniatAzam/portfolio-app",
                 value: (
                   <>
                     <div className="font-thin my-[10px] text-white">
-                      <h1>PyGame</h1>
+                      <h1>React.js, Tailwind CSS, RESTful API</h1>
                     </div>
                     <div className="text-white">
                       <p>
@@ -45,35 +47,26 @@ function Education() {
                       <br />
                       <ul>
                         <li>
-                          • Transformed the board game Elfenland into a
-                          multiplayer computer game using Python with PyGame,
-                          resulting in a 70% improvement in user experience
+                          • Engineered a dynamic portfolio website using React,
+                          Tailwnd CSS, HTML, and JavaScript
                         </li>
                         <li>
-                          • Designed and developed backend logic for 25+
-                          features using Object-Oriented programming and design
-                          patterns, enhancing game functionality and engagement
-                        </li>
-                        <li>• Implemented UI with PyGame</li>
-                        <li>
-                          • Seamlessly integrated backend logic with UI
-                          components, ensuring a 40% increase in overall user
-                          satisfaction
+                          • Implemented CI/CD pipelines with Firebase, leading
+                          to a 60% reduction in deployment times and a 40%
+                          decrease in post-deployment issues.
                         </li>
                         <li>
-                          • Created and documented wireframes for 50+ game
-                          features using Adobe Illustrator, contributing to a
-                          50% reduction in development time
+                          • Utilized React hooks like useContext, useState,
+                          useInView, and useEffect to enhance user engagement.
                         </li>
                         <li>
-                          • Documented the game's Concept Model, Environment
-                          Model, Operation Model & Protocol Model
+                          • Added Emailjs to create an efficient mail form,
+                          reducing communication response time by over 50%.
                         </li>
                         <li>
-                          • Developed the game's networking to enable
-                          multiplayer functionality through a client-server
-                          model (Python, REST API, and Docker), resulting in a
-                          60% rise in player interaction
+                          • Incorporated JSON API integration for real-time
+                          output and tracked API calls efficiently in the
+                          codebase.
                         </li>
                       </ul>
                     </div>
@@ -234,21 +227,33 @@ function Education() {
                   </>
                 ),
               },
-              {
-                key: "Certificate",
-                value: "The Certification for my Computer Science Degree",
-                photo: cert,
-              },
             ]}
-            photo={mcgill}
+            photo={rocket}
             color="bg-[#FFB91D]"
           />
           <Modal
-            title="Entrepreneurship"
+            title="Marketing - SEO"
             subtitle="A Glance"
             description="2020-2021"
-            d1="Amid Covid, a few peers and I started a freelancing marketing agency. We named it Workload, developed this business from the start, and learned how to grow a new business. I brought in new clients and uncovered new business opportunities. Here, I led the team as the chief operating officer, which led me to gain people management and interpersonal skills by motivating and directing a dynamic and creative set of people. I also worked on and led various web design and development projects. As a creative guide for important projects, I successfully translated customer ideas and concepts into concrete designs and products. Furthermore, I created brand identities for new restaurants and companies. Here's a list of some of the clients."
+            d1="Most of the work outlined here was done for the marketing company (Workload) that I co-founded. It is an assortment of marketing and web development projects that I've worked on."
             work={[
+              {
+                key: "Malabis House of Apparel",
+                link: "https://malabishouseofapparel.com/",
+                value: (
+                  <>
+                    <div className="font-thin my-[10px] text-white">
+                      <h1>Website, Brand Identity</h1>
+                      <h2>Adobe Suite, HTML, CSS, JS</h2>
+                    </div>
+                    <div className="text-white">
+                      <p>Garments Manufacturer & Exporter</p>
+                      <br />
+                    </div>
+                  </>
+                ),
+                photo: malabis,
+              },
               {
                 key: "ICS",
                 value: (
@@ -276,7 +281,7 @@ function Education() {
                       <h2>Adobe Suite, WordPress</h2>
                     </div>
                     <div className="text-white">
-                      <p>Produce and Fish Exporter</p>
+                      <p>Fish Exporter</p>
                       <br />
                     </div>
                   </>
@@ -300,7 +305,7 @@ function Education() {
                 photo: orgin,
               },
             ]}
-            photo={wl}
+            photo={market}
             color="bg-[#FFB91D]"
           />
         </div>
@@ -313,7 +318,7 @@ function Education() {
                 document.getElementById("contulee").getBoundingClientRect()
                   .top +
                 window.scrollY +
-                -90,
+                -25,
               behavior: "smooth",
             })
           }
