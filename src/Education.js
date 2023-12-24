@@ -46,27 +46,27 @@ function Education() {
                       </p>
                       <br />
                       <ul>
-                        <li>
+                        <li className="mb-2">
                           • Engineered a dynamic portfolio website using React,
                           Tailwnd CSS, HTML, and JavaScript
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Implemented CI/CD pipelines with Firebase, leading
                           to a 60% reduction in deployment times and a 40%
-                          decrease in post-deployment issues.
+                          decrease in post-deployment issues
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Utilized React hooks like useContext, useState,
-                          useInView, and useEffect to enhance user engagement.
+                          useInView, and useEffect to enhance user engagement
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Added Emailjs to create an efficient mail form,
-                          reducing communication response time by over 50%.
+                          reducing communication response time by over 50%
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Incorporated JSON API integration for real-time
                           output and tracked API calls efficiently in the
-                          codebase.
+                          codebase
                         </li>
                       </ul>
                     </div>
@@ -90,32 +90,32 @@ function Education() {
                       </p>
                       <br />
                       <ul>
-                        <li>
+                        <li className="mb-2">
                           • Transformed the board game Elfenland into a
                           multiplayer computer game using Python with PyGame,
                           resulting in a 70% improvement in user experience
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Designed and developed backend logic for 25+
                           features using Object-Oriented programming and design
                           patterns, enhancing game functionality and engagement
                         </li>
-                        <li>• Implemented UI with PyGame</li>
-                        <li>
+                        <li className="mb-2">• Implemented UI with PyGame</li>
+                        <li className="mb-2">
                           • Seamlessly integrated backend logic with UI
                           components, ensuring a 40% increase in overall user
                           satisfaction
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Created and documented wireframes for 50+ game
                           features using Adobe Illustrator, contributing to a
                           50% reduction in development time
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Documented the game's Concept Model, Environment
                           Model, Operation Model & Protocol Model
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Developed the game's networking to enable
                           multiplayer functionality through a client-server
                           model (Python, REST API, and Docker), resulting in a
@@ -137,43 +137,43 @@ function Education() {
                     </div>
                     <div className="text-white">
                       <ul>
-                        <li>
+                        <li className="mb-2">
                           • Designed and implemented frontend components using
                           React, improving user experience and interface flows.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Collaborated closely with design teams, refining UI
-                          and ensuring consistency across platforms.{" "}
+                          and ensuring consistency across platforms{" "}
                         </li>
 
-                        <li>
+                        <li className="mb-2">
                           • Pioneered backend infrastructure with Node.js,
-                          enhancing system reliability and efficiency.{" "}
+                          enhancing system reliability and efficiency{" "}
                         </li>
 
-                        <li>
+                        <li className="mb-2">
                           • Designed 15+ wireframes utilizing Adobe Illustrator,
-                          contributing to a 30% increase in User Retention.{" "}
+                          contributing to a 30% increase in User Retention{" "}
                         </li>
 
-                        <li>
+                        <li className="mb-2">
                           • Implemented 10+ backend routes and controllers with
                           Node.js, facilitating efficient teaching responsibili-
-                          ties management.{" "}
+                          ties management{" "}
                         </li>
 
                         <li>
                           • Engineered robust NoSQL schemas (MongoDB), enhancing
-                          data integrity and I/O performance by 40%.{" "}
+                          data integrity and I/O performance by 40%{" "}
                         </li>
 
-                        <li>
+                        <li className="mb-2">
                           • Developed user interface components with React,
                           enforced Role-Based Access Control (RBAC) for stake-
-                          holders.{" "}
+                          holders{" "}
                         </li>
 
-                        <li>
+                        <li className="mb-2">
                           • Integrated backend logic to the UI components
                           mentioned above to ensure clear 3-tier application
                           with React using TypeScript
@@ -194,31 +194,31 @@ function Education() {
                     </div>
                     <div className="text-white">
                       <ul>
-                        <li>
+                        <li className="mb-2">
                           • Developed using Java Socket Programming, enhancing
                           network simulations and reducing data transmission
                           errors by 50%.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Created a configurable router simulator class with
                           Java Socket Programming, featuring IP configuration,
                           multi-threaded client and server sockets, and
                           link-state database.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Designed and implemented a serialized packet class
                           with sequence numbers, streamlining network message
                           consolidation between routers; reduced data
                           transmission errors by 50% and improved network
                           efficiency by 30%.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Developed a weighted graph class for link state
                           topology, facilitating streamlined route calculation
                           using Dijkstra's algorithm, leading to a 40% increase
                           in route optimization.
                         </li>
-                        <li>
+                        <li className="mb-2">
                           • Innovated a router simulator using Java Socket
                           Programming, enhancing network efficiency by 30%.
                         </li>

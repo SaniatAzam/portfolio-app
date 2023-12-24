@@ -51,7 +51,7 @@ const Modal = ({
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex flex-col items-center justify-center px-4 py-2 text-[#FFB91C] hover:scale-125 cursor-pointer transition-all duration-150 ease-out"
+                      className="flex flex-col items-center justify-center px-4 py-2 text-green-500 hover:scale-125 cursor-pointer transition-all duration-150 ease-out animate-pulse"
                     >
                       <FaLink className="w-6 h-6 mb-1" />
                     </a>
