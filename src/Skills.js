@@ -140,7 +140,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="relative min-h-screen justify-center bg-[#0F0F0F] overflow-hidden px-10 md:px-[100px] snap-y snap-mandatory"
+      className="relative min-h-screen justify-center bg-[#0F0F0F] overflow-hidden px-10 md:px-[100px] md:snap-y md:snap-mandatory"
     >
       <h1 className="text-[#FFB91D] text-4xl font-bold tracking-tight text-white sm:text-6xl mb-10 lg:w-1/4 sm-1/4 items-center justify-center mx-auto text-center">
         SKILLS

@@ -108,7 +108,7 @@ const Contact = () => {
   return (
     <div
       id="contulee"
-      className="relative min-h-screen justify-center bg-[#0F0F0F] overflow-hidden pb-10 pl-5 pr-5 snap-y snap-mandatory pt-10 "
+      className="relative min-h-screen justify-center bg-[#0F0F0F] overflow-hidden pb-10 pl-5 pr-5 md:snap-y md:snap-mandatory pt-10 "
     >
       <div className="flex lg:w-1/4 sm-1/4 items-center justify-center mx-auto text-center">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-10">

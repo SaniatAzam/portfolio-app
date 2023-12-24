@@ -27,7 +27,7 @@ const WorkExperience = () => {
           <a href={link} target="_blank">
             <img
               src={companyName}
-              className=" hover:scale-105 transition-all ease-out duratation-150 mb-3 w-full md:w-[15vw] rounded-md shadow-innergit "
+              className=" hover:scale-105 transition-all ease-out duratation-150 mb-3 w-full md:w-[15vw] rounded-md shadow-inner"
             ></img>
           </a>
           <h2 className="text-semibold text-lg">{title}</h2>
@@ -45,7 +45,7 @@ const WorkExperience = () => {
   return (
     <div
       id="workoo"
-      className="flex flex-col justify-center items-center min-h-screen overflow-hidden bg-[#0F0F0F] p-10 text-white snap-y snap-mandatory"
+      className="flex flex-col justify-center items-center min-h-screen overflow-hidden bg-[#0F0F0F] p-10 text-white md:snap-y md:snap-mandatory"
     >
       <h1 className="text-[#FFB91D] text-4xl font-bold tracking-tight text-white sm:text-6xl mb-10  sm-1/4 items-center justify-center mx-auto text-center">
         WORK EXPERIENCE
