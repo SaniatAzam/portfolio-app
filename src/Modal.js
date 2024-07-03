@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FiMinimize2 } from "react-icons/fi";
+import { IoIosCloseCircle } from "react-icons/io";
 import { FaLink } from "react-icons/fa";
 
 const Modal = ({
@@ -68,7 +68,7 @@ const Modal = ({
               {item.photo ? (
                 <img
                   src={item.photo}
-                  className="my-4 mx-auto shadow-md w-full md:w-3/4"
+                  className="my-4 mx-auto shadow-md w-full md:w-3/4 rounded-xl"
                 />
               ) : (
                 <p></p>
@@ -110,7 +110,7 @@ const Modal = ({
                 className="bg-transparent bg-[#FFB91D]  px-1 py-1 mt-2 mx-3 rounded-md float-left scale-125 hover:scale-100 cursor-pointer transition-all duration-150 ease-out"
                 onClick={toggleModal}
               >
-                <FiMinimize2 className="" />
+                <IoIosCloseCircle className="" />
               </button>
               <h2 className="text-lg font-semibold mt-2 mb-2">{title}</h2>
             </div>

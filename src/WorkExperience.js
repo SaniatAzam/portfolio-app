@@ -2,6 +2,8 @@ import React from "react";
 import paper from "./photos/logo-paper.svg";
 import ResponsibilityModal from "./ResponsibilityModal";
 import wl from "./photos/wlcover.gif";
+import da from "./photos/dataAnnotation.svg";
+import evx from "./photos/logo-evexia-2.png";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
 const WorkExperience = () => {
@@ -9,6 +11,7 @@ const WorkExperience = () => {
     companyName,
     link,
     title,
+    title2,
     location,
     period,
     details,
@@ -31,10 +34,14 @@ const WorkExperience = () => {
             ></img>
           </a>
           <h2 className="text-semibold text-lg">{title}</h2>
-          <h2 className="mb-2">{location}</h2>
+          {title2 && (
+            <h2 className="text-semibold text-lg mt-[-5px]">{title2}</h2>
+          )}
+          <h2 className="mb-2 mt-2">{location}</h2>
           <ResponsibilityModal
             photo={companyName}
             title={title}
+            title2={title2}
             resps={details}
           />
         </div>
@@ -52,11 +59,44 @@ const WorkExperience = () => {
       </h1>
       <div className="px-[50px] md:block justify-center items-center">
         <TimeLine
+          companyName={evx}
+          link="https://evexia-mh.web.app/"
+          title="Full Stack &"
+          title2="Brand Developer"
+          location="Toronto, ON (Remote)"
+          period="2024 - Present"
+          details={[
+            "• Designed the company logo and established comprehensive brand guidelines to ensure a cohesive visual identity across all digital platforms.",
+            "• Engineered and launched the corporate website using React, TypeScript, and TailwindCSS, optimizing for speed and user experience, hosted on Firebase.",
+            "• Created bespoke, reusable components tailored to specific functionalities enhancing user interaction and visual appeal.",
+            "• Collaborating closely with UI/UX designers to translate Figma designs into functional React Native screens, ensuring high fidelity to original design specifications.",
+            "• Developing robust APIs and structuring database schemas using MongoDB, ensuring scalable, secure data management and integration.",
+            "• Leading cross-functional teams through the ongoing stages of the startup, from concept through to MVP development, focusing on iterative improvements and user feedback incorporation.",
+          ]}
+        />
+        <TimeLine
+          companyName={da}
+          link="https://www.dataannotation.tech//"
+          title="AI Trainer &"
+          title2="Prompt Engineer"
+          location="Toronto, ON (Remote)"
+          period="2024 - Present"
+          details={[
+            "• Training and enhancement of artificial intelligence models through evaluation, response assessment, and direct interaction.",
+            "• Critically analyzing bot responses against several criteria.",
+            "• Inputting model responses for AI learning.",
+            "• Employing various programming languages to optimize their coding efficiency.",
+            "• Training models on correctly performing data analysis and visualization by self-analyzing the data using Pandas.",
+            "• Reinforcing AI models' unit testing capabilities by programming code and its unit tests.",
+          ]}
+        />
+        <TimeLine
           companyName={paper}
           link="https://paper.co/"
           title="STEM Tutor"
-          location="Toronto, ON (Remote)"
-          period="2022 - Present"
+          title2={null}
+          location="Toronto, ON"
+          period="2022 - 2024"
           details={[
             "• Oversaw tutoring sessions, elevating students' comprehension in programming languages like JavaScript and Java.",
             "• Collaborated on Slack, achieving a 50% improvement in collective tutoring outcomes.",
@@ -67,7 +107,8 @@ const WorkExperience = () => {
         <TimeLine
           companyName={wl}
           link="https://www.behance.net/workloadbd/"
-          title="Co-Founder & COO"
+          title="Web Developer &"
+          title2="Digital Artist"
           location="Dhaka, Bangladesh"
           period="2020 - 2021"
           details={[

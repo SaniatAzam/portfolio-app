@@ -15,24 +15,13 @@ function Nav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Get the current scroll position of the page
       const scrollY = window.scrollY;
-
-      // Get the full height of the webpage
       const totalHeight = document.documentElement.scrollHeight;
-
-      // Get the inner height of the viewport
       const viewportHeight = window.innerHeight;
-
-      // Calculate the height of the page that's not visible in the viewport
       const nonVisibleHeight = totalHeight - viewportHeight;
-
-      // Calculate the scroll position as a percentage of the total possible scroll amount
       const scrollPercentage =
         nonVisibleHeight > 0 ? (scrollY / nonVisibleHeight) * 100 : 0;
-
       setProgress(scrollPercentage.toFixed(0) + "%");
-
       if (!isScrolling) {
         setIsScrolling(true);
       }
@@ -48,17 +37,15 @@ function Nav() {
       clearTimeout(scrollTimeoutRef.current);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isScrolling]); // Removed the empty array to have the effect depend on isScrolling
-
-  // The rest of your component remains unchanged...
+  }, [isScrolling]);
 
   return (
     <footer
-      className={`sticky top-0 z-50 bg-[#222222] ${
-        isScrolling ? "opacity-50" : "opacity-90"
-      } shadow-md border-[1px] border-[#303030] w-4/5 rounded-bl-xl rounded-br-xl mx-auto`}
+      className={`sticky top-0 z-50 nav-overlay modal-overlay ${
+        isScrolling ? "bg-gr_5 backdrop-blur-sm" : "bg-gr_8 backdrop-blur-md"
+      } transition-all duration-[1500ms] shadow-md border-[1px] border-[#303030] w-4/5 rounded-bl-xl rounded-br-xl mx-auto `}
     >
-      <nav className="backdrop-filter backdrop-blur-lg flex items-center justify-center py-2 px-4 ">
+      <nav className="flex items-center justify-center py-2 px-4 ">
         <a
           href="https://github.com/SaniatAzam"
           target="_blank"

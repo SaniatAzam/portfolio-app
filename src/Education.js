@@ -11,6 +11,23 @@ import ta from "./photos/TA.png";
 import cert from "./photos/Cert.png";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
+const Tags = ({ tagProps }) => {
+  return (
+    <>
+      <div className="flex flex-row flex-wrap  mb-[10px] text-xs">
+        {tagProps.map((tag, idx) => (
+          <p
+            key={idx}
+            className="py-2 px-4 border-[1px] border-[#FFB91D] rounded-xl text-white font-thin font-sm shadow-xl hover:cursor-default mb-2 mr-2 scale-80 md:scale-60"
+          >
+            {tag}
+          </p>
+        ))}
+      </div>
+    </>
+  );
+};
+
 function Education() {
   return (
     <div
@@ -35,17 +52,21 @@ function Education() {
                 link: "https://github.com/SaniatAzam/portfolio-app",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
-                      <h1>React.js, Tailwind CSS, RESTful API</h1>
+                    <div className="font-thin mb-[10px] text-white">
+                      <div>
+                        <Tags
+                          tagProps={["React.js", "Tailwind CSS", "RESTful API"]}
+                        />
+                      </div>
                     </div>
                     <div className="text-white">
                       <p>
-                        Digitization of the board game Elfenland using PyGame.
+                        Portfolio Website
                         {/* This was a team project for a rigorous two-semester
                         Software Engineer Project course [COMP 361 D1 & D2]. */}
                       </p>
                       <br />
-                      <ul>
+                      <ul className="tracking-tight">
                         <li className="mb-2">
                           • Engineered a dynamic portfolio website using React,
                           Tailwnd CSS, HTML, and JavaScript
@@ -79,9 +100,10 @@ function Education() {
                 link: "https://github.com/linusfoo/Elfenland",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
-                      <h1>PyGame</h1>
-                    </div>
+                    <Tags
+                      tagProps={["PyGame", "Docker", "RESTful API", "TCP"]}
+                    />
+
                     <div className="text-white">
                       <p>
                         Digitization of the board game Elfenland using PyGame.
@@ -132,8 +154,16 @@ function Education() {
                 link: "https://github.com/SaniatAzam/ta-management-system-mern",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
-                      <h3>MERN, TypeScript</h3>
+                    <div className="font-thin mb-[10px] text-white">
+                      <Tags
+                        tagProps={[
+                          "Mongo DB",
+                          "React",
+                          "TypeScript",
+                          "Express",
+                          "Node.js",
+                        ]}
+                      />
                     </div>
                     <div className="text-white">
                       <ul>
@@ -189,8 +219,17 @@ function Education() {
                 link: "https://github.com/SaniatAzam/Link-State-Routing-Protocol-",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
-                      <h3>Java, Socket Programming</h3>
+                    <div className="font-thin mb-[10px] text-white">
+                      <Tags
+                        tagProps={[
+                          "Java",
+                          "Socket Programming",
+                          "TCP",
+                          "Djikstra's Algo",
+                          "Network Simulation",
+                          "Multithreading",
+                        ]}
+                      />
                     </div>
                     <div className="text-white">
                       <ul>
@@ -242,7 +281,7 @@ function Education() {
                 link: "https://malabishouseofapparel.com/",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
+                    <div className="font-thin mb-[10px] text-white">
                       <h1>Website, Brand Identity</h1>
                       <h2>Adobe Suite, HTML, CSS, JS</h2>
                     </div>
@@ -258,7 +297,7 @@ function Education() {
                 key: "ICS",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
+                    <div className="font-thin mb-[10px]] text-white">
                       <h1>Website, Brand Identity</h1>
                       <h2>Adobe Suite, HTML, CSS, JS</h2>
                     </div>
@@ -274,7 +313,7 @@ function Education() {
                 key: "Nisshin Agro",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
+                    <div className="font-thin mb-[10px] text-white">
                       <h1>
                         Website, Brand Identity, Magazine, Packaging Design
                       </h1>
@@ -292,7 +331,7 @@ function Education() {
                 key: "Orgin",
                 value: (
                   <>
-                    <div className="font-thin my-[10px] text-white">
+                    <div className="font-thin mb-[10px] text-white">
                       <h1>Packaging Desgin, Facebook Marketing</h1>
                       <h2>Adobe Suite, Facebook Business Manager</h2>
                     </div>

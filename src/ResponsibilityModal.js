@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FiMinimize2 } from "react-icons/fi";
+import { IoIosCloseCircle } from "react-icons/io";
 import cert from "./photos/Cert.png";
 
-const ResponsibilityModal = ({ photo = null, title, resps }) => {
+const ResponsibilityModal = ({ photo = null, title, title2, resps }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isViewed, setIsViewed] = useState(false);
 
@@ -54,10 +54,10 @@ const ResponsibilityModal = ({ photo = null, title, resps }) => {
                 className="bg-transparent bg-[#FFB91D]  px-1 py-1 mt-2 mx-3 rounded-md float-left scale-125 hover:scale-100 cursor-pointer transition-all duration-150 ease-out"
                 onClick={toggleModal}
               >
-                <FiMinimize2 className="" />
+                <IoIosCloseCircle className="" />
               </button>
               <h2 className="text-lg font-semibold mt-2 mb-2 text-center">
-                {title}
+                {title} {title2 && ` ${title2}`}
               </h2>
             </div>
             <div className="modal-content p-5">
